@@ -47,7 +47,7 @@ def displayResult():
         data_arr = []
         meal_name_arr = []
         #Url of data csv
-        url='File Url'
+        url='https://storage.googleapis.com/cloudbucket12/DataFile.csv'
         response=urllib2.urlopen(url)
         reader = csv.reader(response)
         i=0
