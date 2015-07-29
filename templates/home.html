@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function show() { document.getElementById('cluster').style.display = 'block'; }
+function hide() { document.getElementById('cluster').style.display = 'none'; }
+
+</script>
+<form action="/request" method="post">
+<br>
+<input type="radio" name="radio" value="cluster" onclick='show();' >Cluster<br>
+Dataset: https://storage.googleapis.com/cloudbucket12/DataFile.csv <br>
+Number of Clusters:<br>
+<input style="display:none;" type="text" id="cluster" name="cluster" /><br>
+<input type="radio" name="radio" value="barchart" onclick='hide();'>Bar Chart<br>
+<input type="radio" name="radio" value="scatterchart" onclick='hide();'>Scatter chart<br>
+
+<input type ="submit" value="submit"><br>
+
+</form>
+
+<center>
+<img src="{{image}}" width="400" height="400">
+</center>
+
+</body>
+</html>
